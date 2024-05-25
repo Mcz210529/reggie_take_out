@@ -6,8 +6,6 @@ import com.itheima.mapper.AddressBookMapper;
 import com.itheima.service.AddressBookService;
 import org.springframework.stereotype.Service;
 
-;import java.util.Collection;
-
 
 @Service
 public class AddressBookServiceImpl extends ServiceImpl<AddressBookMapper, AddressBook> implements AddressBookService {

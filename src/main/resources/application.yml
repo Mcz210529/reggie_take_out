@@ -3,6 +3,19 @@ server:
 spring:
   application:
     name: reggie_take_out
+  data:
+    redis:
+      host: 47.120.25.122
+      port: 6379
+      password: mcz210529
+      database: 0
+      jedis:
+        pool:
+          max-active: 8
+          max-idle: 4
+          min-idle: 0
+          max-wait: 1ms
+
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/reggie?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
